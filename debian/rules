@@ -17,6 +17,7 @@ endif
 	dh $@
 
 override_dh_auto_build-arch:
+	@echo blhc: ignore-line-regexp: LINK libvterm.la
 	$(MAKE) $(V) PREFIX=/usr LIBDIR=/usr/lib/$(DEB_HOST_MULTIARCH)
 
 override_dh_auto_install-arch:

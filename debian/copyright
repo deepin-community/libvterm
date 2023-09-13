@@ -1,13 +1,13 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: libvterm
-Source: http://www.leonerd.org.uk/code/libvterm/
+Source: https://www.leonerd.org.uk/code/libvterm/
 
 Files: *
-Copyright: 2008-2019 Paul Evans <leonerd@leonerd.org.uk>
+Copyright: 2008-2023 Paul Evans <leonerd@leonerd.org.uk>
 License: MIT
 
 Files: debian/*
-Copyright: 2014-2019 James McCoy <jamessan@debian.org>
+Copyright: 2014-2023 James McCoy <jamessan@debian.org>
 License: MIT
 
 Files: src/unicode.c
@@ -32,6 +32,6 @@ License: MIT
  OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
  IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
- CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, 
- TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE 
+ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
  SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

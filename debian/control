@@ -1,10 +1,12 @@
 Source: libvterm
 Priority: optional
 Maintainer: James McCoy <jamessan@debian.org>
-Build-Depends: debhelper-compat (= 12), libtool-bin
-Standards-Version: 4.5.0
+Build-Depends:
+ debhelper-compat (= 13),
+ libtool-bin,
+Standards-Version: 4.6.2
 Section: libs
-Homepage: http://www.leonerd.org.uk/code/libvterm/
+Homepage: https://www.leonerd.org.uk/code/libvterm/
 Rules-Requires-Root: no
 Vcs-Git: https://salsa.debian.org/jamessan/libvterm.git
 Vcs-Browser: https://salsa.debian.org/jamessan/libvterm
@@ -13,7 +15,9 @@ Package: libvterm-dev
 Section: libdevel
 Multi-Arch: same
 Architecture: any
-Depends: libvterm0 (= ${binary:Version}), ${misc:Depends}
+Depends:
+ libvterm0 (= ${binary:Version}),
+ ${misc:Depends},
 Description: abstract terminal library (development files)
  An abstract C99 library which implements a VT220 or xterm-like terminal
  emulator. It doesn't use any particular graphics toolkit or output
@@ -26,11 +30,16 @@ Description: abstract terminal library (development files)
  with libvterm.
 
 Package: libvterm0
-Pre-Depends: ${misc:Pre-Depends}
+Pre-Depends:
+ ${misc:Pre-Depends},
 Multi-Arch: same
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: pangoterm (<< 0~bzr608), neovim (<< 0.4)
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+Breaks:
+ neovim (<< 0.4),
+ pangoterm (<< 0~bzr608),
 Description: abstract terminal library
  An abstract C99 library which implements a VT220 or xterm-like terminal
  emulator. It doesn't use any particular graphics toolkit or output
@@ -42,7 +51,9 @@ Description: abstract terminal library
 Package: libvterm-bin
 Section: misc
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
 Description: abstract terminal library (utility programs)
  An abstract C99 library which implements a VT220 or xterm-like terminal
  emulator. It doesn't use any particular graphics toolkit or output
