@@ -1,5 +1,6 @@
 libvterm.so.0 libvterm0 #MINVER#
 * Build-Depends-Package: libvterm-dev
+ vterm_build@Base 0.3
  vterm_check_version@Base 0.1
  vterm_color_is_equal@Base 0.1
  vterm_copy_cells@Base 0~bzr618
@@ -26,21 +27,25 @@ libvterm.so.0 libvterm0 #MINVER#
  vterm_output_read@Base 0~bzr635
  vterm_output_set_callback@Base 0.1
  vterm_parser_get_cbdata@Base 0~bzr626
- vterm_parser_set_callbacks@Base 0~bzr626
+ vterm_parser_set_callbacks@Base 0.2
+ vterm_parser_set_emit_nul@Base 0.3.1
  vterm_screen_convert_color_to_rgb@Base 0.1
  vterm_screen_enable_altscreen@Base 0~bzr618
+ vterm_screen_enable_reflow@Base 0.3
  vterm_screen_flush_damage@Base 0~bzr618
  vterm_screen_get_attrs_extent@Base 0~bzr618
  vterm_screen_get_cbdata@Base 0~bzr626
- vterm_screen_get_cell@Base 0~bzr618
+ vterm_screen_get_cell@Base 0.2
  vterm_screen_get_chars@Base 0~bzr618
  vterm_screen_get_text@Base 0~bzr618
  vterm_screen_get_unrecognised_fbdata@Base 0~bzr656
  vterm_screen_is_eol@Base 0~bzr618
  vterm_screen_reset@Base 0~bzr618
- vterm_screen_set_callbacks@Base 0~bzr618
+ vterm_screen_set_callbacks@Base 0.2
  vterm_screen_set_damage_merge@Base 0~bzr618
- vterm_screen_set_unrecognised_fallbacks@Base 0~bzr656
+ vterm_screen_set_default_colors@Base 0.3.1
+ vterm_screen_set_reflow@Base 0.3
+ vterm_screen_set_unrecognised_fallbacks@Base 0.2
  vterm_scroll_rect@Base 0~bzr618
  vterm_set_size@Base 0~bzr618
  vterm_set_utf8@Base 0~bzr621
@@ -55,9 +60,11 @@ libvterm.so.0 libvterm0 #MINVER#
  vterm_state_get_penattr@Base 0~bzr618
  vterm_state_get_unrecognised_fbdata@Base 0~bzr655
  vterm_state_reset@Base 0~bzr618
+ vterm_state_send_selection@Base 0.2
  vterm_state_set_bold_highbright@Base 0~bzr618
- vterm_state_set_callbacks@Base 0~bzr618
+ vterm_state_set_callbacks@Base 0.2
  vterm_state_set_default_colors@Base 0~bzr618
  vterm_state_set_palette_color@Base 0~bzr618
  vterm_state_set_termprop@Base 0~bzr618
- vterm_state_set_unrecognised_fallbacks@Base 0~bzr655
+ vterm_state_set_selection_callbacks@Base 0.2
+ vterm_state_set_unrecognised_fallbacks@Base 0.2
